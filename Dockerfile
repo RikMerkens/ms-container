@@ -10,4 +10,4 @@ RUN pwsh -c 'Install-Module -Name MicrosoftTeams -Force -Confirm:$False -AllowCl
 
 
 
-RUN pwsh -c 'Get-Date -UFormat "%d-%B-%Y | %H:%M" | Out-File -FilePath "buildTime"'
+RUN pwsh -c 'Get-Date -UFormat "%d-%B-%Y | %H:%M" | Out-File -FilePath "buildTimeUTCContainer"'
